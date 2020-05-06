@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2020, 2:19:53 PM
+    Author     : ica
+*/
+
+.sidebar{
+    background-color: #000;
+    width:50%;
+    height:100%;
+    position:fixed;
+    z-index:1;
+    overflow-x:hidden;
+/*    top:0;
+    left:0;*/
+    
+}
+.main{
+    margin-left:50%;
+    padding: 10% 10%;
+}
+.text{
+    color:#fff;
+    padding:20px;
+    margin: 20%;
+}

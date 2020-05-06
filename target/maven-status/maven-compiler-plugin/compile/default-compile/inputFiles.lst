@@ -1,0 +1,10 @@
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/dao/DbConnection.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/logic/AdminLogic.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/model/Client.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/logic/response.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/controller/AddClient.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/model/Admin.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/logic/ClientLogic.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/controller/LoginServlet.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/controller/ForgotPassword.java
+/home/ica/NetBeansProjects/ADC3_Injectors/src/main/java/controller/LogoutServlet.java
