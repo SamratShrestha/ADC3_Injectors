@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
-    <servlet-mapping>
-        <servlet-name>ForgotPassword</servlet-name>
-        <url-pattern>/admin/forgotpassword</url-pattern>
-    </servlet-mapping>
+  
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    <!--Login Mapping-->
+    <!--Mapping for admin started-->
+    <!--LoginMapping-->
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
+      <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/admin/dashboard</url-pattern>
+        <url-pattern>/admin/login</url-pattern>
     </servlet-mapping>
     <!--Logout Mapping-->
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>ForgotPassword</servlet-name>
         <servlet-class>controller.ForgotPassword</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>LogoutServlet</servlet-name>
-        <url-pattern>/admin/logout</url-pattern>
+        <servlet-name>ForgotPassword</servlet-name>
+        <url-pattern>/forgotpassword</url-pattern>
     </servlet-mapping>
     <!--Add client mapping-->
     <servlet>
@@ -40,6 +42,18 @@
         <servlet-name>AddClient</servlet-name>
         <url-pattern>/admin/addclient</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>controller.ChangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/admin/changepassword</url-pattern>
+    </servlet-mapping>
+    <!--Mapping for admin finished-->
+    <!--Maping for client started-->
+  
+    <!--Maping for client finished-->
     <!--    <error-page>
         <location>/error.jsp</location>
     </error-page>-->

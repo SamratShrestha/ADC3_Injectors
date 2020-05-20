@@ -33,7 +33,7 @@ public class ForgotPassword extends HttpServlet {
         try {
             HttpSession session = request.getSession();
             Connection con = new DbConnection().createConnection();
-            PreparedStatement pstm = con.prepareStatement("select * from admin where username=?");
+            PreparedStatement pstm = con.prepareStatement("select * from users where username=?");
             pstm.setString(1, username);
             ResultSet rs = pstm.executeQuery();
             if(rs.next()){

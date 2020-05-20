@@ -15,16 +15,23 @@ import java.sql.SQLException;
  */
 public class DbConnection {
 
-    private Connection con;
-    private String url = "jdbc:mysql://localhost:3306/injectors";
-    private String dbusername = "niit";
-    private String dbpassword = "";
-    public DbConnection(){
-        con=null;
-    }
-    public Connection createConnection() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        con = DriverManager.getConnection(url, dbusername, dbpassword);
+//    private Connection con;
+    private static final String url = "jdbc:mysql://localhost:3306/injectors";
+    private static final String dbusername = "niit";
+    private static final String dbpassword = "";
+//    public DbConnection(){
+//        con=null;
+//    }
+
+    public static Connection createConnection() throws ClassNotFoundException, SQLException {
+        Connection con = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection(url, dbusername, dbpassword);
+        } catch (Exception e) {
+            con.close();
+            System.out.println(e);
+        }
         return con;
     }
 }

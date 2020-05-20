@@ -22,12 +22,13 @@ import javax.servlet.http.HttpSession;
 public class LogoutServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.removeAttribute("username");
+        session.removeAttribute("cusername");
         session.invalidate();
-        response.sendRedirect("../index.jsp");
+        response.sendRedirect("index.jsp");
     }
 
 }

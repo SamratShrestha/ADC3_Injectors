@@ -8,23 +8,46 @@ and open the template in the editor.
     Author     : ica
 */
 
-.sidebar{
+#sidebar{
     background-color: #000;
     width:50%;
     height:100%;
     position:fixed;
     z-index:1;
     overflow-x:hidden;
-/*    top:0;
-    left:0;*/
-    
+    /*    top:0;
+        left:0;*/
+
 }
 .main{
     margin-left:50%;
     padding: 10% 10%;
 }
+.main button{
+    font-style:italic;
+    color:#013;
+
+}
 .text{
     color:#fff;
     padding:20px;
     margin: 20%;
+}
+footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:darkblue;
+    font-size:16px;
+    text-align: center;
+
+    height:2rem;
+}
+footer ul{
+
+    list-style:none; 
+}
+.ml-auto{
+    margin-right: 20px;
 }

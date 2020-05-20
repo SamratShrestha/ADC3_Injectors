@@ -21,7 +21,7 @@
     <%=failed%>
 </div>
 <%
-            session.removeAttribute("success-message");
+            session.removeAttribute("faliure-message");
         }
     } catch (Exception e) {
     }
